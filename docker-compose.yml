@@ -1,0 +1,16 @@
+services:
+  api:
+    build:
+      context: ./services/api
+      dockerfile: Dockerfile
+    container_name: agrismart-api
+    ports:
+      - "8000:8000"
+    environment:
+      - DEMO_MODE=true
+      - PORT=8000
+      - HOST=0.0.0.0
+      - ENVIRONMENT=development
+    volumes:
+      - ./services/api:/app
+    restart: unless-stopped

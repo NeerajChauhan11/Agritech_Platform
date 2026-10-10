@@ -1,0 +1,30 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+
+# node / next
+node_modules/
+.next/
+
+# model weights and datasets (re-created by scripts/fetch_general_model.py)
+services/api/models/**/*.onnx
+services/api/models/**/*.pt
+services/api/models/**/*.pth
+services/api/models/clip_general/
+!services/api/models/.gitkeep
+data/
+
+# os / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

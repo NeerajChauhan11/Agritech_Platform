@@ -1,0 +1,8 @@
+# Training-only dependencies for scripts/train_disease_model.py (not needed by the API).
+# Install in a separate virtual environment, ideally on a machine with a GPU.
+torch>=2.4
+torchvision>=0.19
+pillow>=10.0.0
+numpy>=1.26.0
+onnx>=1.16.0
+onnxruntime>=1.20.0
